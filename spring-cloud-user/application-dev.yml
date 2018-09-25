@@ -15,9 +15,9 @@ security:
 
 # eureka客户端信息配置
 eureka:
-   instance:
-     hostname: mss-user.ns.me
-     instance-id: ${random.uuid}(${spring.application.name}::${eureka.instance.hostname}:${server.port})
+#   instance:
+#     hostname: mss-user.ns.me
+#     instance-id: ${random.uuid}(${spring.application.name}::${eureka.instance.hostname}:${server.port})
    client:
      registry-fetch-interval-seconds: 5
      service-url: 
