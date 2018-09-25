@@ -1,0 +1,24 @@
+# 本服务基础信息配置
+server:
+  port: 9522
+# 日志配置
+logging:
+  level:
+#    org.springframework.cache: TRACE
+    org.apache.coyote.http11.Http11InputBuffer: DEBUG
+    org.apache.coyote.http11.Http11OutputBuffer: DEBUG
+# 安全认证服务配置
+security:
+  user:
+    name: user
+    password: password
+
+# eureka客户端信息配置
+eureka:
+   instance:
+     hostname: mss-user.ns.me
+     instance-id: ${random.uuid}(${spring.application.name}::${eureka.instance.hostname}:${server.port})
+   client:
+     registry-fetch-interval-seconds: 5
+     service-url: 
+       defaultZone: http://${security.user.name}:${security.user.password}@mss-eureka01.ns.me:5683/eureka/,http://${security.user.name}:${security.user.password}@mss-eureka02.ns.me:5683/eureka/,http://${security.user.name}:${security.user.password}@mss-eureka03.ns.me:5683/eureka/
