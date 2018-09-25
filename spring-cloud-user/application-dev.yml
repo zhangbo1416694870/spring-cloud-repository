@@ -8,10 +8,10 @@ logging:
     org.apache.coyote.http11.Http11InputBuffer: DEBUG
     org.apache.coyote.http11.Http11OutputBuffer: DEBUG
 # 安全认证服务配置
-#security:
-#  user:
-#    name: user
-#    password: password
+security:
+  user:
+    name: user
+    password: password
 
 # eureka客户端信息配置
 eureka:
@@ -24,4 +24,4 @@ eureka:
        defaultZone: http://user:password@mss-eureka01.ns.me:5683/eureka/,http://user:password@mss-eureka02.ns.me:5683/eureka/,http://user:password@mss-eureka03.ns.me:5683/eureka/
 
 test: 
-  prop: I'm from GIT-dev-3.0
+  prop: I'm from GIT-dev-1.0
