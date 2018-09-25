@@ -22,3 +22,6 @@ eureka:
      registry-fetch-interval-seconds: 5
      service-url: 
        defaultZone: http://${security.user.name}:${security.user.password}@mss-eureka01.ns.me:5683/eureka/,http://${security.user.name}:${security.user.password}@mss-eureka02.ns.me:5683/eureka/,http://${security.user.name}:${security.user.password}@mss-eureka03.ns.me:5683/eureka/
+       
+test: 
+  prop: I'm from GIT-prod-1.0

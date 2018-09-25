@@ -1,3 +1,5 @@
 spring:
    profiles:
       active: dev
+test: 
+  prop: I'm from GIT-pre-1.0
