@@ -24,4 +24,4 @@ eureka:
        defaultZone: http://user:password@mss-eureka01.ns.me:5683/eureka/,http://user:password@mss-eureka02.ns.me:5683/eureka/,http://user:password@mss-eureka03.ns.me:5683/eureka/
 
 test: 
-  prop: I'm from GIT-dev-2.0
+  prop: I'm from GIT-dev-3.0-by-zb
